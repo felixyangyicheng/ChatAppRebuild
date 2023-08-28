@@ -1,0 +1,16 @@
+
+version: '1'
+services:
+
+  chat:
+    image: chat
+    container_name: chat
+    expose:
+      - 8080
+    ports:
+      - '8080:8080'
+    # volumes:
+    #   - /data/example/mysql:/var/lib/mysql
+    restart: always
+
+
