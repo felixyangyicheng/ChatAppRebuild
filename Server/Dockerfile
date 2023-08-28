@@ -5,7 +5,7 @@ WORKDIR /app
 EXPOSE 8080
 EXPOSE 443
 ENV DOTNET_URLS=http://+:8080
-COPY ../Server . && COPY ../Client . && ../Shared .
+COPY ../Server .  COPY ../Client . && COPY ../Shared .
 RUN dotnet restore
 RUN dotnet publish -o /app/published-app
 
